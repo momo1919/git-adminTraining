@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:upo9YmjVrobf3mqEFMkoXMnwfCcXYThAvcpbtfs9"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:TfvUnXJ52mqwyQyHR6MqfgYznIQtLgG51EUtT+w4"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:njRvdF33kNrJ5udWqYkzd8dDUa4RWsbP/oVbpjy2"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:9cgi4zYzt1FipFpSt/3Iiw+bJLvUSQauZ0BYeKhe"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -127,18 +127,32 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1"/>
   </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;the end is near&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7d6bea77-8595-4ace-b6c3-b6b270ba00a9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/Skna6bwwti/a/1PInA5pJo1iXRQJ2mwHOFN8NbuyqBDcv4CEDhs9orX6EK7JMhaH6hEO02yGRz2&#13;
-mnL+McE8ug==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0f919e5a-45fb-484d-b536-c089c1ca59b4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NRPBaQUdLidglDrUC6RxoMCSx00im3juWHvRfhKfXKMObslcIgPXox+ngQkvfI60bkFFVoik9BMJ&#13;
-+dtwwc6ukQ==</DigestValue></Reference></SignedInfo><SignatureValue>bk90GabRNW+wd+84z8qaBm8z1uHbG6mUHOXDTFpWRkqGyw8yuzauCzNctbU2B31pBmj5ylZ2Bda9&#13;
-iw7/74P/SKawbbPgmVKk8QZJWn4B590UiNUncRHpNyrYUheiVu79RGSXu2IRleQzKKVkqulRIWZ+&#13;
-U9tXV2D/sTTJnOuw/pO+mhDGofbCRjGgLxWyStSB1Pm16Dw3UqNmHRPF4Ep6SwDkOrdxqfKxyt8u&#13;
-derXsDkkzcSnALcUWAqUBI6ntFkTFikq1dWZiXW5MwAPgJyUQEGqK7CTz5cn385RgBGmcft3hVLF&#13;
-3G9SHc6ms9S1lwd7Q5I1TRFWudnNhU5QPkOS7A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e0ad8a7f-6897-4b3d-83ff-9a3c63750960"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xi8Tw0nnwjDXXukw01L98o+gZd45dRxdcqqpzIE6+tSzBfJArCaGrhG5gvgakjjSU1RcUj2yN7Rm&#13;
+MNraZCY4CA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cd9a51bd-8f21-4f4b-b2ad-97061f15d77a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HSEhpzZDH8UhY3gvBlP+gegv01Bt5CEU+QBU4T2/fjyYBVGD32i0pHVd+yiG59c6eU8s3/G3jYXq&#13;
+3CoYn7+0OA==</DigestValue></Reference></SignedInfo><SignatureValue>FjoaD+FYE2tSEddpP9A2PygxYzc6U8HOewy3frJ9tFSEwhaftQIZPrRAa0EGa0fmzKcJEj25PS5t&#13;
+OBuBih+c+r6sNhko0xzFzaPt31lg+z6L8Tu2iwWLc6gAHVcnODjjjE1oSFbEvKA2FgsvnU0FrpXS&#13;
+ehdyEWvWnVjoaMc6SK2tlnBl1mi8wZaWygNHwIiDhGWrnm9LAFuoSm+FgbZYklUIc7VCkDLVelVD&#13;
+8uqssxGBxWmw2tMN17DZTtXgZcVpg88ZYQ6LP+TDbpSp32GihU+HL6LFLcxKQG07Sra6I0mCZcfp&#13;
+kXyYNK26mLZjTDjsKtiJdP6+JX09swyZgQgZww==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -160,4 +174,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0f919e5a-45fb-484d-b536-c089c1ca59b4" Target="#_7d6bea77-8595-4ace-b6c3-b6b270ba00a9"><Timestamp>2023-04-26 12:47:06</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cd9a51bd-8f21-4f4b-b2ad-97061f15d77a" Target="#_e0ad8a7f-6897-4b3d-83ff-9a3c63750960"><Timestamp>2023-04-26 13:10:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
